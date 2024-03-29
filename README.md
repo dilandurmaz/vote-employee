@@ -25,5 +25,5 @@ Inside it, add WEB_API_ENDPOINT='http://localhost:9002/graphql'. Then, we'll use
 
 Run the following command to see the project:
 
-docker compose up --build
+docker compose up 
 
