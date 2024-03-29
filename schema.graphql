@@ -1,0 +1,18 @@
+type Employee {
+  id: ID!
+  imageUrl: String @fake(type:imageUrl)
+  fullName: String @fake(type:fullName)
+  title: String @fake(type: jobTitle)
+  city: String @fake(type: city)
+  email: String @fake(type:email)
+  numberVotes: Int 
+}
+
+
+type Query {
+  Employees: [Employee] @listLength(min: 10, max: 10)
+   Employee(id: ID!): Employee
+
+}
+
+

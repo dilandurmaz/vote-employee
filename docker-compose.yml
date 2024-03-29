@@ -1,0 +1,18 @@
+version: '3'
+services:
+  vote-employee:
+    build: .
+    ports:
+      - "3000:3000"
+
+  graphql-faker:
+    image: apisguru/graphql-faker
+    command: "schema.graphql"
+    volumes:
+      - ./schema.graphql:/workdir/schema.graphql
+    ports:
+      - 9002:9002
+
+
+
+
